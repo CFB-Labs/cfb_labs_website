@@ -8,22 +8,24 @@ body {
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 auto;
 }
 
 .header {
-    margin: 20px 0px;
+    margin: 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 360px;
 }
 
 .logotipe {
-    width: 300px;
+    width: 100px;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
@@ -32,7 +34,7 @@ body {
 }
 
 .title {
-    width: 600px;
+    width: 200px;
     height: 100px;
     font-family: 'PS2P-Regular';
     color: white;
@@ -42,18 +44,12 @@ body {
     justify-content: center;
 }
 
-.social_network {
-    width: 300px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-}
+
+
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
     border: 1px solid white;
     background-color: white;
@@ -68,11 +64,11 @@ body {
 }
 
 .content {
-    width: 1920px;
+    margin: 20px;
     height: 900px;
     font-family: 'PS2P-Regular';
     color: white;
-    font-size: 200px;
+    font-size: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,21 +78,27 @@ body {
 
 
 .footer_1 {
-    margin: 20px 0px;
+    margin: 20px;
+    height: 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 1320px;
 }
 
 .footer_2 {
-    margin: 20px 0px;
-    height: 50px;
-    width: 1920px;
+    margin: 20px;
+    height: 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 1395px;
+}
+
+.footer_3 {
+    margin: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .copyright {
