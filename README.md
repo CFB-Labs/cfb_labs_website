@@ -1,1 +1,3 @@
-# crypro-family-bank.ru
+# CRYPTO FAMILY BANK (CFB)
+
+> Крипто‑стартап из гаража. Мы создаём будущее интернета.
