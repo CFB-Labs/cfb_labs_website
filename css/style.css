@@ -40,6 +40,22 @@ body {
     justify-content: center;
 }
 
+.menu-burger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu-burger-line {
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    border-radius: 45px;
+}
+
 .line {
     display: block;
     height: 1px;
