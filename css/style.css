@@ -17,6 +17,7 @@ body {
 }
 
 .header {
+    position: relative;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -112,6 +113,51 @@ body {
     justify-content: center;
 }
 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(15, 15, 15);
+    width: 200px;
+    max-width: calc(100% - 20px);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+    z-index: 1000;
+    margin-top: 2px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 16px;
+    color: white;
+    font-family: 'PS2P-Regular';
+    text-decoration: none;
+    font-size: 10px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
 @media screen and (max-width: 480px) {
     .title {
         width: 100px;
@@ -120,5 +166,12 @@ body {
         justify-content: center;
         text-align: center;
         gap: 8px;
+    }
+
+    .dropdown-menu {
+        top: 100%;
+        right: 10px;
+        width: 180px;
+        max-width: calc(100% - 20px);
     }
 }
