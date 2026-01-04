@@ -1,3 +1,3 @@
 # CRYPTO FAMILY BANK (CFB)
 
-#### official website of the organization
+#### Official website of the organization
