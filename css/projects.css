@@ -1,12 +1,15 @@
 @font-face {
     font-family: 'PS2P-Regular';
-    src: url(../fonts/PressStart2P-Regular.ttf) format('truetype');
+    src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
 }
 
 body {
-    background-color: black;
-    font-family: 'PS2P-Regular';
-    color: white;
+    background-color: #000;
+    color: #fff;
+    font-family: 'PS2P-Regular', monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
 }
 
 .container {
@@ -18,40 +21,46 @@ body {
 .filter {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
 }
 
 .filter-item {
     padding: 12px 24px;
-    border: 2px solid white;
+    border: 2px solid #fff;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
 }
 
-.filter-item.active {
-    background-color: white;
-    color: black;
-    font-weight: bold;
-}
-
+.filter-item.active,
 .filter-item:hover {
-    background-color: white;
-    color: black;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
 }
 
 .vivod {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
+    padding: 0;
+    list-style: none;
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #1e1e1e;
     border-radius: 10px;
     padding: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .project-card:hover {
@@ -61,15 +70,19 @@ body {
 
 .project-card h3 {
     font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+    font-weight: normal;
 }
 
-.project-card p {
+.project-packed p {
     font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+}
+
+.project-card img {
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
