@@ -1,3 +1,3 @@
 # CRYPTO FAMILY BANK (CFB)
 
-> Крипто‑стартап из гаража. Мы создаём будущее интернета.
+> A crypto startup from a garage. We are creating the future of the internet.
