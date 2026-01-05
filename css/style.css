@@ -97,6 +97,11 @@ body {
     background-color: white;
 }
 
+.icon:hover {
+    transform: scale(1.1);
+}
+
+
 .footer_2 {
     padding: 10px;
     display: flex;
