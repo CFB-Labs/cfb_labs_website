@@ -3,8 +3,13 @@
     src: url(../fonts/PressStart2P-Regular.ttf) format('truetype');
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: rgb(0, 0, 0);
+    height: 100%;
 }
 
 .visor {
@@ -69,8 +74,8 @@ body {
 }
 
 .content {
-    padding: 10px;
     height: 1000px;
+    padding: 10px;
     font-family: 'PS2P-Regular';
     color: white;
     font-size: 25px;
