@@ -1,27 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-    
     const burger = document.getElementById('burger');
     const dropdownMenu = document.getElementById('dropdownMenu');
 
-   
-    burger.addEventListener('click', function (event) {
-        event.stopPropagation(); 
+    if (!burger || !dropdownMenu) return;
+
+    burger.addEventListener('click', function (e) {
+        e.stopPropagation();
         dropdownMenu.classList.toggle('active');
     });
 
-    
-    document.addEventListener('click', function (event) {
-      
-        const isClickInsideMenu = dropdownMenu.contains(event.target);
-        const isClickOnBurger = burger.contains(event.target);
-
-        if (!isClickInsideMenu && !isClickOnBurger) {
+    document.addEventListener('click', function (e) {
+        if (!burger.contains(e.target) && !dropdownMenu.contains(e.target)) {
             dropdownMenu.classList.remove('active');
         }
-    });
-
-    
-    dropdownMenu.addEventListener('click', function (event) {
-        event.stopPropagation();
     });
 });
