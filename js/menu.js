@@ -1,17 +1,15 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('burger');
-    const dropdownMenu = document.getElementById('dropdownMenu');
+    const dropdown = document.getElementById('dropdownMenu');
 
-    if (!burger || !dropdownMenu) return;
-
-    burger.addEventListener('click', function (e) {
+    burger.addEventListener('click', (e) => {
         e.stopPropagation();
-        dropdownMenu.classList.toggle('active');
+        dropdown.classList.toggle('active');
     });
 
-    document.addEventListener('click', function (e) {
-        if (!burger.contains(e.target) && !dropdownMenu.contains(e.target)) {
-            dropdownMenu.classList.remove('active');
+    document.addEventListener('click', (e) => {
+        if (!burger.contains(e.target) && !dropdown.contains(e.target)) {
+            dropdown.classList.remove('active');
         }
     });
 });
