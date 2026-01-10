@@ -1,3 +1,3 @@
-# CRYPTO FAMILY BANK (CFB)
+# CFB Labs
 
 #### Official website of the organization
