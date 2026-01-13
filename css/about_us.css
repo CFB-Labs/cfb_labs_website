@@ -36,7 +36,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Стили из первого файла */
 main {
     flex: 1;
     display: flex;
@@ -54,7 +53,6 @@ main {
     max-width: 90%;
 }
 
-/* Общая линия */
 .line {
     height: 2px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -62,7 +60,6 @@ main {
     margin: 0;
 }
 
-/* Футер — полностью из второго файла */
 .footer {
     flex-shrink: 0;
     padding: 10px 0 0;
