@@ -1,23 +1,42 @@
 @font-face {
-    font-family: 'PS2P-Regular';
+    font-family: 'PressStart2P';
     src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
-    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --border-color: #fff;
+    --text-color: #fff;
+    --bg-color: #000;
+    --accent-color: #fff;
+    --accent-text-color: #000;
+    --card-border: 2px solid var(--border-color);
+    --radius-small: 5px;
+    --radius-large: 50px;
+    --radius-xl: 10px;
+    --gap-small: 12px;
+    --gap-medium: 24px;
+    --padding-small: 12px;
+    --padding-medium: 28px;
+    --transition: all 0.3s ease;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'PressStart2P', monospace;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'PS2P-Regular', monospace;
+    line-height: 1.5;
     font-size: 12px;
-    line-height: 1.4;
     letter-spacing: 0.5px;
 }
 
+/* Стили из первого файла */
 main {
     flex: 1;
     display: flex;
@@ -35,6 +54,7 @@ main {
     max-width: 90%;
 }
 
+/* Общая линия */
 .line {
     height: 2px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -42,6 +62,7 @@ main {
     margin: 0;
 }
 
+/* Футер — полностью из второго файла */
 .footer {
     flex-shrink: 0;
     padding: 10px 0 0;
@@ -66,7 +87,7 @@ main {
     border-radius: 50%;
     border: 1px solid white;
     background-color: white;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
