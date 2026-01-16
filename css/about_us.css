@@ -36,6 +36,38 @@ body {
     letter-spacing: 0.5px;
 }
 
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+    transition: opacity 0.2s ease;
+}
+
+.back-arrow::before {
+    content: "←";
+}
+
+.back-arrow:hover {
+    opacity: 0.8;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0 24px;
+    letter-spacing: 2px;
+}
+
 main {
     flex: 1;
     display: flex;
@@ -111,4 +143,50 @@ main {
     font-size: 7px;
     color: white;
     text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 24px;
+        margin: 32px 0 20px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .back-arrow {
+        top: 12px;
+        left: 12px;
+        width: 28px;
+        height: 28px;
+        font-size: 20px;
+    }
+
+    .footer_1 {
+        gap: 20px;
+    }
+
+    .icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .icon img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .copyright {
+        font-size: 6px;
+        padding: 0 6px;
+        line-height: 1.3;
+    }
 }

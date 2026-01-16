@@ -31,6 +31,32 @@ body {
     line-height: 1.5;
 }
 
+/* Стрелка "назад" — фиксированная в левом верхнем углу */
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+    transition: opacity 0.2s ease;
+}
+
+.back-arrow::before {
+    content: "←";
+}
+
+.back-arrow:hover {
+    opacity: 0.8;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -52,6 +78,12 @@ body {
     list-style: none;
 }
 
+.vivod a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .black-folder {
     position: relative;
     width: 100%;
@@ -65,6 +97,12 @@ body {
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     cursor: pointer;
+}
+
+.black-folder img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
 }
 
 .black-folder:hover {
@@ -115,18 +153,6 @@ body {
     height: 64px;
     object-fit: contain;
     pointer-events: none;
-}
-
-.black-folder img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-}
-
-.vivod a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
 }
 
 .line {
@@ -236,5 +262,13 @@ body {
     .folder-icon {
         width: 60px;
         height: 60px;
+    }
+
+    .back-arrow {
+        top: 12px;
+        left: 12px;
+        width: 28px;
+        height: 28px;
+        font-size: 20px;
     }
 }

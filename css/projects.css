@@ -31,6 +31,31 @@ body {
     line-height: 1.5;
 }
 
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+    transition: opacity 0.2s ease;
+}
+
+.back-arrow::before {
+    content: "←";
+}
+
+.back-arrow:hover {
+    opacity: 0.8;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -271,5 +296,13 @@ body {
     .filter-item {
         padding: 8px 16px;
         font-size: 11px;
+    }
+
+    .back-arrow {
+        top: 12px;
+        left: 12px;
+        width: 28px;
+        height: 28px;
+        font-size: 20px;
     }
 }
