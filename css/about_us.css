@@ -85,6 +85,7 @@ main {
     max-width: 90%;
 }
 
+/* Footer styles (copied from projects.css) */
 .line {
     height: 2px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -145,12 +146,13 @@ main {
     text-align: center;
     word-wrap: break-word;
     word-break: break-word;
-    white-space: pre-wrap;
+    white-space: normal;
     max-width: 100%;
     padding: 0 8px;
     box-sizing: border-box;
 }
 
+/* Mobile adjustments */
 @media (max-width: 480px) {
     .page-title {
         font-size: 24px;
